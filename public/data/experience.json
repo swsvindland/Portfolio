@@ -1,0 +1,56 @@
+{
+    "data": [
+        {
+            "image": "/experience/nulia.png",
+            "company": "Nulia",
+            "jobTitle": "Frontend Developer",
+            "dateRange": ["March 2020", "Current"],
+            "description": [
+                "Implemented a React based Microsoft Teams application", 
+                "Updated and created new components while maintaining WCAG 2 AA compliance",
+                "Broke down features into user stories based off designs and functional specifications",
+                "Led frontend development and mentored a junior member, managed deadlines and ticket assignment",
+                "Improved load times for pages by up to 90% and increased unit test coverage of both frontend and backend repos"
+            ],
+            "website": "https://nulia.com",
+            "github": ""
+        },
+        {
+            "image": "/experience/nulia.png",
+            "company": "Nulia",
+            "jobTitle": "Quality Assurance Engineer",
+            "dateRange": ["June 2019", "March 2020"],
+            "description": [
+                "Design and create test utilites to implement integrations tests",
+                "Establish a qa process"
+            ],
+            "website": "https://nulia.com",
+            "github": ""
+        },
+        {
+            "image": "/experience/edgde.png",
+            "company": "Edgde",
+            "jobTitle": "Software Engineer (Intern)",
+            "dateRange": ["June 2019", "March 2020"],
+            "description": [
+                "Led a three-man developer team in creating a video and podcast service",
+                "Created a video and audio transcoding app to allow multiple quality options on content"
+            ],
+            "website": "https://edgde.com",
+            "github": ""
+        },
+        {
+            "image": "/experience/oregon.png",
+            "company": "University of Oregon",
+            "jobTitle": "iOS Application Developer",
+            "dateRange": ["June 2019", "March 2020"],
+            "description": [
+                "Designed and Implemented an iOS application for research data gathering",
+                "Fixed bugs and added new features based on client feedback",
+                "Submitted app though apple app store"
+            ],
+            "website": "",
+            "github": ""
+        }
+    ]
+}
