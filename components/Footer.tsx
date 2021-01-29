@@ -1,4 +1,12 @@
 import {
+  contact,
+  experience,
+  home,
+  portfolio,
+  privacy,
+  terms,
+} from "../src/routes";
+import {
   faGithub,
   faLinkedin,
   faYoutube,
@@ -32,22 +40,22 @@ const Footer: FC = () => {
         <div className="mx-5 my-3">
           <ul className="list-unstyled">
             <li>
-              <a href="/">Home</a>
+              <a href={home}>Home</a>
             </li>
             <li>
-              <a href="/experience">Experience</a>
+              <a href={experience}>Experience</a>
             </li>
             <li>
-              <a href="/portfolio">Portfolio</a>
+              <a href={portfolio}>Portfolio</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href={contact}>Contact</a>
             </li>
             <li>
-              <a href="/terms">Terms</a>
+              <a href={terms}>Terms</a>
             </li>
             <li>
-              <a href="/privacy">Privacy</a>
+              <a href={privacy}>Privacy</a>
             </li>
           </ul>
         </div>

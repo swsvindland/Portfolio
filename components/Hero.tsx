@@ -1,5 +1,7 @@
 import React, { FC } from "react";
 
+import { contact } from "../src/routes";
+
 const Hero: FC = () => {
   return (
     <section className="hero">
@@ -22,7 +24,7 @@ const Hero: FC = () => {
             If you would like to work with me, or hire me for a project, reach
             out using the link below.
           </p>
-          <a className="btn btn-primary" href="/contact">
+          <a className="btn btn-primary" href={contact}>
             Contact Me
           </a>
         </div>
