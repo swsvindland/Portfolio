@@ -6,8 +6,14 @@ import "../styles/header.css";
 import "../styles/footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Theme from "../components/Theme";
+
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <Theme>
+      <Component {...pageProps} />
+    </Theme>
+  );
 }
 
 export default MyApp;
