@@ -1,10 +1,23 @@
+import { Theme, makeStyles } from "@material-ui/core";
+
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import styles from "../styles/Home.module.css";
+
+const useStyles = makeStyles((theme: Theme) => ({
+  root: {
+    backgroundColor: "#eaeaea",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "flex-start",
+  },
+}));
 
 export default function Home() {
+  const classes = useStyles();
+
   return (
     <>
       <Head>
@@ -20,7 +33,7 @@ export default function Home() {
 
       <Header />
 
-      <main className={styles.main}>
+      <main className={classes.root}>
         <Hero />
       </main>
 

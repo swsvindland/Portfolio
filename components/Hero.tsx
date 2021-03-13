@@ -5,7 +5,8 @@ import { contact } from "../src/routes";
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${"/images/hero.jpg"})`,
+    background:
+      'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/hero.jpg")',
     width: "100%",
     height: "80vh",
     backgroundSize: "cover",

@@ -1,27 +1,76 @@
+import { Button, Link, Theme, Typography, makeStyles } from "@material-ui/core";
 import React, { FC } from "react";
 import { contact, experience, home, portfolio } from "../src/routes";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileCode } from "@fortawesome/free-solid-svg-icons";
 
+const useStyles = makeStyles((theme: Theme) => ({
+  root: {
+    width: "100%",
+    color: "#fff",
+    backgroundColor: "#333",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  content: {
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    maxWidth: 1040,
+    padding: "10px 20px",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      justifyContent: "center",
+    },
+  },
+  icon: {
+    width: "2em",
+    height: "2em",
+    marginRight: theme.spacing(1),
+  },
+  item: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  link: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+  },
+}));
+
 const Header: FC = () => {
+  const classes = useStyles();
+
   return (
-    <header className="header">
-      <div className="header-content">
-        <a className="header-item" href={home}>
-          <FontAwesomeIcon className="header-icon" icon={faFileCode} />
-          <h1 className="header-title">Sam Svindland</h1>
-        </a>
-        <div className="header-item">
-          <a className="header-link" href={experience}>
+    <header className={classes.root}>
+      <div className={classes.content}>
+        <Link className={classes.item} href={home}>
+          <FontAwesomeIcon className={classes.icon} icon={faFileCode} />
+          <Typography variant="h6" component="h1">
+            Sam Svindland
+          </Typography>
+        </Link>
+        <div className={classes.item}>
+          <Link className={classes.link} href={experience}>
             Experience
-          </a>
-          <a className="header-link" href={portfolio}>
+          </Link>
+          <Link className={classes.link} href={portfolio}>
             Portfolio
-          </a>
-          <a className="btn btn-primary" href={contact}>
+          </Link>
+          <Button
+            className={classes.link}
+            variant="contained"
+            color="primary"
+            component="a"
+            href={contact}
+          >
             Contact Me
-          </a>
+          </Button>
         </div>
       </div>
     </header>
