@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
   },
   icon: {
-    width: "2em",
-    height: "2em",
+    width: "2em !important",
+    height: "2em !important",
     marginRight: theme.spacing(1),
   },
   item: {

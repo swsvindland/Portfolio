@@ -2,6 +2,19 @@ import { CssBaseline, ThemeProvider, createMuiTheme } from "@material-ui/core";
 import React, { FC } from "react";
 
 const theme = createMuiTheme({
+  palette: {
+    type: "dark",
+    primary: {
+      light: "#6ec6ff",
+      main: "#2196f3",
+      dark: "#0069c0",
+    },
+    secondary: {
+      light: "#d05ce3",
+      main: "#9c27b0",
+      dark: "#6a0080",
+    },
+  },
   overrides: {
     MuiTypography: {
       h1: {
@@ -43,6 +56,26 @@ const theme = createMuiTheme({
       body2: {
         fontFamily: "CascadiaCode",
         fontSize: "1em",
+      },
+      overline: {
+        fontFamily: "CascadiaCode",
+        fontSize: "1em",
+        textTransform: "uppercase",
+      },
+      button: {
+        fontFamily: "CascadiaCode",
+        fontSize: "1em",
+        textTransform: "uppercase",
+      },
+    },
+    MuiButton: {
+      label: {
+        fontFamily: "CascadiaCode",
+      },
+    },
+    MuiLink: {
+      root: {
+        fontFamily: "CascadiaCode",
       },
     },
   },
