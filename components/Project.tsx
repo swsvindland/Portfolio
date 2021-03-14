@@ -1,3 +1,10 @@
+import {
+  IconButton,
+  Paper,
+  Theme,
+  Typography,
+  makeStyles,
+} from "@material-ui/core";
 import React, { FC } from "react";
 import {
   faAppStore,
@@ -7,6 +14,24 @@ import {
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/Project.module.css";
+
+const useStyles = makeStyles((theme: Theme) => ({
+  root: {
+    width: 300,
+    height: 400,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    textAlign: "center",
+    padding: 24,
+  },
+  image: {
+    width: 150,
+    height: 150,
+    borderRadius: 8,
+  },
+}));
 
 interface IProps {
   image: string;
@@ -25,35 +50,50 @@ const Project: FC<IProps> = ({
   googlePlay,
   appleStore,
 }) => {
+  const classes = useStyles();
+
   return (
-    <li>
-      <article className={styles.card}>
-        <img
-          className={styles.image}
-          src={`/images${image}`}
-          alt={`${title}`}
-        />
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
-        <div className={styles.links}>
-          {github && (
-            <a href={github}>
-              <FontAwesomeIcon className={styles.icon} icon={faGithub} />
-            </a>
-          )}
-          {googlePlay && (
-            <a href={googlePlay}>
-              <FontAwesomeIcon className={styles.icon} icon={faGooglePlay} />
-            </a>
-          )}
-          {appleStore && (
-            <a href={appleStore}>
-              <FontAwesomeIcon className={styles.icon} icon={faAppStore} />
-            </a>
-          )}
-        </div>
-      </article>
-    </li>
+    <Paper elevation={1} component="article" className={classes.root}>
+      <img className={styles.image} src={`/images${image}`} alt={`${title}`} />
+      <Typography variant="h6" component="h2">
+        {title}
+      </Typography>
+      <Typography variant="body2" component="p" className={styles.description}>
+        {description}
+      </Typography>
+      <div className={styles.links}>
+        {github && (
+          <IconButton
+            href={github}
+            aria-label="Github"
+            rel="noopener"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </IconButton>
+        )}
+        {googlePlay && (
+          <IconButton
+            href={googlePlay}
+            aria-label="Google Play Store"
+            rel="noopener"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faGooglePlay} />
+          </IconButton>
+        )}
+        {appleStore && (
+          <IconButton
+            href={appleStore}
+            aria-label="Apple App Store"
+            rel="noopener"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faAppStore} />
+          </IconButton>
+        )}
+      </div>
+    </Paper>
   );
 };
 

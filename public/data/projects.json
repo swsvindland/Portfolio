@@ -1,15 +1,6 @@
 {
     "data": [
         {
-            "image": "/projects/beautiful.png",
-            "title": "You're Beautiful",
-            "description": "Coming Soon",
-            "github": "",
-            "googlePlay": "",
-            "appleStore": "",
-            "website": ""
-        },
-        {
             "image": "/projects/water-track.png",
             "title": "WaterTrack",
             "description": "An Application for tracking daily water intake build with flutter",
@@ -21,8 +12,26 @@
         {
             "image": "/projects/rasterizer.png",
             "title": "Rasterizer",
-            "description": "A mesh rasterizer build in C++",
+            "description": "A mesh rasterizer built in C++",
             "github": "https://github.com/swsvindland/Rasterizer",
+            "googlePlay": "",
+            "appleStore": "",
+            "website": ""
+        },
+        {
+            "image": "/projects/image-processor.png",
+            "title": "Image Processor",
+            "description": "An image process capible of filtering, resizing, shrinking, combining, and blending PNM images",
+            "github": "https://github.com/swsvindland/ImageProcessor",
+            "googlePlay": "",
+            "appleStore": "",
+            "website": ""
+        },
+        {
+            "image": "/projects/erg-track.png",
+            "title": "ErgTrack",
+            "description": "An Application for tracking ergometer workouts",
+            "github": "https://github.com/swsvindland/ergtrack",
             "googlePlay": "",
             "appleStore": "",
             "website": ""
