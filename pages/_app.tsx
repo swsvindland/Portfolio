@@ -1,7 +1,5 @@
 import "../styles/globals.css";
-import "../styles/timeline.css";
 import "../styles/contact.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import Theme from "../components/Theme";
 import { useEffect } from "react";
