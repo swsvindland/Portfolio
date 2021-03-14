@@ -60,11 +60,10 @@ const Hero: FC = () => {
             Vue and Flutter.
           </Typography>
           <Typography variant="body1" component="p" className={classes.typo}>
-            I have developed many professional level applications and you can
-            see my work history under the experiance secion of this webiste.
-            Also i ahve developed many personal projects as a showcase of my
-            skills and passion for developing fast, reliable, and beautiful
-            applications.
+            I have developed many professional level applications, check out my
+            work experiance page. Also i've created many personal projects as a
+            showcase of my skills and passion for developing fast, reliable, and
+            beautiful applications, check out my projects page.
           </Typography>
           <Typography variant="body1" component="p" className={classes.typo}>
             If you would like to work with me, or hire me for a project, reach
