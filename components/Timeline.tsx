@@ -45,7 +45,7 @@ const Timeline: FC<IProps> = ({ posts }) => {
   return (
     <MuiTimeline align="alternate">
       {posts.map((value, index) => (
-        <TimelineItem>
+        <TimelineItem key={`TimelineItem-${index}`}>
           <TimelineSeparator>
             <TimelineDot color="secondary" />
             <TimelineConnector />

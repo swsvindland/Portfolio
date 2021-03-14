@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Header from "../components/Header";
-import styles from "../styles/Terms.module.css";
 
 export default function Privacy() {
   return (
@@ -19,7 +18,7 @@ export default function Privacy() {
 
       <Header />
 
-      <main className={styles.main}>
+      <main style={{ padding: 16 }}>
         <h2>Privacy Policy</h2>
         <p>
           Samuel Svindland built the WaterTrack app as an Ad Supported app. This

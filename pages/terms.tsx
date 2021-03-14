@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Header from "../components/Header";
-import styles from "../styles/Terms.module.css";
 
 export default function Terms() {
   return (
@@ -19,7 +18,7 @@ export default function Terms() {
 
       <Header />
 
-      <main className={styles.main}>
+      <main style={{ padding: 16 }}>
         <h2>Terms &amp; Conditions</h2>
         <p>
           By downloading or using the app, these terms will automatically apply

@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import "../styles/contact.css";
 
 import Theme from "../components/Theme";
 import { useEffect } from "react";

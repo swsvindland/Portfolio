@@ -13,7 +13,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "../styles/Project.module.css";
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -30,6 +29,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     width: 150,
     height: 150,
     borderRadius: 8,
+  },
+  links: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   },
 }));
 
@@ -54,14 +58,14 @@ const Project: FC<IProps> = ({
 
   return (
     <Paper elevation={1} component="article" className={classes.root}>
-      <img className={styles.image} src={`/images${image}`} alt={`${title}`} />
+      <img className={classes.image} src={`/images${image}`} alt={`${title}`} />
       <Typography variant="h6" component="h2">
         {title}
       </Typography>
-      <Typography variant="body2" component="p" className={styles.description}>
+      <Typography variant="body2" component="p">
         {description}
       </Typography>
-      <div className={styles.links}>
+      <div className={classes.links}>
         {github && (
           <IconButton
             href={github}

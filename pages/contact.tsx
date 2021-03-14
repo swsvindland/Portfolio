@@ -2,7 +2,6 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Header from "../components/Header";
-import styles from "../styles/Portfolio.module.css";
 
 export default function Experience({ posts }) {
   return (
@@ -20,7 +19,7 @@ export default function Experience({ posts }) {
 
       <Header />
 
-      <main className={styles.main}>
+      <main>
         <Contact />
       </main>
 
