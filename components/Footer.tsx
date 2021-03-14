@@ -55,9 +55,11 @@ const Footer: FC = () => {
     <footer className={classes.root}>
       <div className={classes.content}>
         <div className={classes.links}>
-          <Typography variant="h6" component="h3" className="text-muted">
+          <Typography variant="h6" component="h3">
             Svindland Tech
           </Typography>
+          <Link href="mailto:swsvindland@gmail.com">swsvindland@gmail.com</Link>
+          <br />
           <IconButton
             component="a"
             aria-label="GitHub"

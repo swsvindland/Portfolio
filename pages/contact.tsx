@@ -1,13 +1,29 @@
+import { Theme, makeStyles } from "@material-ui/core";
+
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import Header from "../components/Header";
 
-export default function Experience({ posts }) {
+const useStyles = makeStyles((theme: Theme) => ({
+  root: {
+    width: "100%",
+    height: "80vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: theme.spacing(2),
+  },
+}));
+
+export default function Experience() {
+  const classes = useStyles();
+
   return (
     <>
       <Head>
-        <title>Svindland | Portfolio</title>
+        <title>Svindland | Contact Me</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="preload"
@@ -19,7 +35,7 @@ export default function Experience({ posts }) {
 
       <Header />
 
-      <main>
+      <main className={classes.root}>
         <Contact />
       </main>
 
