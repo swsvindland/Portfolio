@@ -55,13 +55,13 @@ const Hero: FC = () => {
             Frontend Software Developer
           </Typography>
           <Typography variant="body1" component="p" className={classes.typo}>
-            I am a software developer with eight plus years of experiance. I
+            I am a software developer with eight plus years of experience. I
             specialize in frontend developement with frameworks such as React,
             Vue and Flutter.
           </Typography>
           <Typography variant="body1" component="p" className={classes.typo}>
             I have developed many professional level applications, check out my
-            work experiance page. Also i've created many personal projects as a
+            work experience page. Also i've created many personal projects as a
             showcase of my skills and passion for developing fast, reliable, and
             beautiful applications, check out my projects page.
           </Typography>
