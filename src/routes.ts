@@ -1,8 +1,10 @@
 export const home = "/";
-export const experience =
-  process.env.NODE_ENV === "production" ? "experience.html" : "experience";
-export const portfolio =
-  process.env.NODE_ENV === "production" ? "portfolio.html" : "portfolio";
+export const design =
+    process.env.NODE_ENV === "production" ? "design.html" : "design";
+export const coding =
+  process.env.NODE_ENV === "production" ? "coding.html" : "coding";
+export const work =
+  process.env.NODE_ENV === "production" ? "work.html" : "work";
 export const contact =
   process.env.NODE_ENV === "production" ? "contact.html" : "contact";
 export const terms =

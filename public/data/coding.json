@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "image": "/experience/nulia.png",
+            "image": "/coding/nulia.png",
             "company": "Nulia",
             "jobTitle": "Frontend Developer",
             "dateRange": ["March 2020", "Current"],
@@ -16,7 +16,7 @@
             "github": ""
         },
         {
-            "image": "/experience/nulia.png",
+            "image": "/coding/nulia.png",
             "company": "Nulia",
             "jobTitle": "Quality Assurance Engineer",
             "dateRange": ["June 2019", "March 2020"],
@@ -28,7 +28,7 @@
             "github": ""
         },
         {
-            "image": "/experience/edgde.png",
+            "image": "/coding/edgde.png",
             "company": "Edgde",
             "jobTitle": "Software Engineer (Intern)",
             "dateRange": ["June 2019", "March 2020"],
@@ -40,7 +40,7 @@
             "github": ""
         },
         {
-            "image": "/experience/oregon.png",
+            "image": "/coding/oregon.png",
             "company": "University of Oregon",
             "jobTitle": "iOS Application Developer",
             "dateRange": ["June 2019", "March 2020"],

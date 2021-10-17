@@ -3,9 +3,9 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Timeline from "../components/Timeline";
-import data from "../public/data/experience.json";
+import data from "../public/data/coding.json";
 
-export default function Experience({ posts }) {
+export default function Work({ posts }) {
   return (
     <>
       <Head>

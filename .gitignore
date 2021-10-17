@@ -25,3 +25,5 @@ yarn-error.log*
 
 # Other
 .DS_Store
+.vscode
+.idea

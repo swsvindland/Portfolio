@@ -5,7 +5,6 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
-import classes from "*.module.css";
 import data from "../public/data/projects.json";
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }));
 
-export default function Portfolio({ posts }) {
+export default function Coding({ posts }) {
   const classes = useStyles();
 
   return (

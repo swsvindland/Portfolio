@@ -7,12 +7,13 @@ import {
 } from "@material-ui/core";
 import React, { FC } from "react";
 import {
-  contact,
+  coding,
+  contact, design,
   experience,
   home,
   portfolio,
   privacy,
-  terms,
+  terms, work,
 } from "../src/routes";
 import {
   faGithub,
@@ -94,10 +95,13 @@ const Footer: FC = () => {
               <Link href={home}>Home</Link>
             </li>
             <li>
-              <Link href={experience}>Experience</Link>
+              <Link href={design}>Design</Link>
             </li>
             <li>
-              <Link href={portfolio}>Portfolio</Link>
+              <Link href={coding}>Coding</Link>
+            </li>
+            <li>
+              <Link href={work}>Work History</Link>
             </li>
             <li>
               <Link href={contact}>Contact</Link>
