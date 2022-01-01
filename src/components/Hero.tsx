@@ -1,7 +1,7 @@
 import { Button, Theme, Typography, makeStyles } from "@material-ui/core";
 import React, { FC } from "react";
 
-import { contact } from "../src/routes";
+import { contact } from "../routes";
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {

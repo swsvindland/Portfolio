@@ -1,10 +1,10 @@
 import { Theme, makeStyles } from "@material-ui/core";
 
-import Footer from "../components/Footer";
+import Footer from "../src/components/Footer";
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import Header from "../components/Header";
-import Projects from "../components/Projects";
+import Header from "../src/components/Header";
+import Projects from "../src/components/Projects";
 import data from "../public/data/projects.json";
 
 const useStyles = makeStyles((theme: Theme) => ({

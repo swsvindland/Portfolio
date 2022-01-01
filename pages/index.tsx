@@ -1,9 +1,9 @@
 import { Theme, makeStyles } from "@material-ui/core";
 
-import Footer from "../components/Footer";
+import Footer from "../src/components/Footer";
 import Head from "next/head";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
+import Header from "../src/components/Header";
+import Hero from "../src/components/Hero";
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {

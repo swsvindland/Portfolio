@@ -8,13 +8,13 @@ import {
 import React, { FC } from "react";
 import {
   coding,
-  contact, design,
-  experience,
+  contact,
+  design,
+  games,
   home,
-  portfolio,
   privacy,
   terms, work,
-} from "../src/routes";
+} from "../routes";
 import {
   faGithub,
   faLinkedin,
@@ -99,6 +99,9 @@ const Footer: FC = () => {
             </li>
             <li>
               <Link href={coding}>Coding</Link>
+            </li>
+            <li>
+              <Link href={games}>Games</Link>
             </li>
             <li>
               <Link href={work}>Work History</Link>

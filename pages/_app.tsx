@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 
-import Theme from "../components/Theme";
+import Theme from "../src/components/Theme";
 import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {

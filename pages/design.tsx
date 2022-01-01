@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
+import Footer from "../src/components/Footer";
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import Header from "../components/Header";
+import Header from "../src/components/Header";
 import data from "../public/data/coding.json";
 import {makeStyles, Theme} from "@material-ui/core";
 

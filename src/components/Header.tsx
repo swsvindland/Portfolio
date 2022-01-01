@@ -1,6 +1,6 @@
 import { Button, Link, Theme, Typography, makeStyles } from "@material-ui/core";
 import React, { FC } from "react";
-import {coding, contact, design, home, work} from "../src/routes";
+import {coding, contact, design, games, home, work} from "../routes";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileCode } from "@fortawesome/free-solid-svg-icons";
@@ -61,6 +61,9 @@ const Header: FC = () => {
           </Link>
           <Link className={classes.link} href={coding}>
             Coding
+          </Link>
+          <Link className={classes.link} href={games}>
+            Games
           </Link>
           <Link className={classes.link} href={work}>
             Work History
