@@ -61,7 +61,7 @@ const Hero: FC = () => {
           </Typography>
           <Typography variant="body1" component="p" className={classes.typo}>
             I have developed many professional level applications, check out my
-            work experience page. Also i've created many personal projects as a
+            work experience page. Also I have created many personal projects as a
             showcase of my skills and passion for developing fast, reliable, and
             beautiful applications, check out my projects page.
           </Typography>
