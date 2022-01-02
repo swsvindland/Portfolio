@@ -8,7 +8,7 @@ interface IProps {
 }
 const Projects: FC<IProps> = ({ posts }) => {
   return (
-    <Grid container spacing={3} align="center" justify="center">
+    <Grid container spacing={3} alignItems="center" justifyContent="center">
       {posts.map((value, index) => (
         <Grid key={`project-${index}`} item zeroMinWidth>
           <Project
