@@ -1,31 +1,31 @@
 @font-face {
-  font-family: CascadiaCode;
-  src: url("/fonts/CascadiaCode.ttf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
+    font-family: CascadiaCode;
+    src: url('/fonts/CascadiaCode.ttf');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-  color: white !important;
-  text-decoration: none;
+    color: white !important;
+    text-decoration: none;
 }
 
 ul {
-  padding-inline-start: 0;
+    padding-inline-start: 0;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 * {
-  box-sizing: border-box;
-  font-family: CascadiaCode;
+    box-sizing: border-box;
+    font-family: CascadiaCode;
 }

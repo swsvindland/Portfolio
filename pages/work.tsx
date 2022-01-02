@@ -1,39 +1,20 @@
-import Footer from "../src/components/Footer";
-import { GetStaticProps } from "next";
-import Head from "next/head";
-import Header from "../src/components/Header";
-import Timeline from "../src/components/Timeline";
-import data from "../public/data/coding.json";
+import { GetStaticProps } from 'next';
+import Timeline from '../src/components/Timeline';
+import data from '../public/data/coding.json';
+import { PageLayout } from '../src/components/PageLayout';
 
 export default function Work({ posts }) {
-  return (
-    <>
-      <Head>
-        <title>Svindland | Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="preload"
-          href="/fonts/CascadiaCode.ttf"
-          as="font"
-          crossOrigin=""
-        />
-      </Head>
-
-      <Header />
-
-      <main>
-        <Timeline posts={posts} />
-      </main>
-
-      <Footer />
-    </>
-  );
+    return (
+        <PageLayout>
+            <Timeline posts={posts} />
+        </PageLayout>
+    );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      posts: data.data,
-    },
-  };
+    return {
+        props: {
+            posts: data.data,
+        },
+    };
 };

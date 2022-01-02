@@ -1,58 +1,22 @@
-import Footer from "../src/components/Footer";
-import { GetStaticProps } from "next";
-import Head from "next/head";
-import Header from "../src/components/Header";
-import data from "../public/data/coding.json";
-import {makeStyles, Theme} from "@material-ui/core";
+import { GetStaticProps } from 'next';
+import data from '../public/data/design.json';
+import { PageLayout } from '../src/components/PageLayout';
 
-const useStyles = makeStyles((theme: Theme) => ({
-    root: {
-        minHeight: "70vh",
-        height: "100%",
-        width: "100%",
-        backgroundColor: "#666666",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: 24,
-    },
-}));
-
-export default function Design({posts}) {
-    const classes = useStyles();
-
-  return (
-    <>
-      <Head>
-        <title>Svindland | Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="preload"
-          href="/fonts/CascadiaCode.ttf"
-          as="font"
-          crossOrigin=""
-        />
-      </Head>
-
-      <Header />
-
-      <main className={classes.root}>
-        <div>
-            <h1>Design</h1>
-            <p>Coming Soon</p>
-        </div>
-      </main>
-
-      <Footer />
-    </>
-  );
+export default function Design({ posts }) {
+    return (
+        <PageLayout>
+            <div>
+                <h1>Design</h1>
+                <p>Coming Soon</p>
+            </div>
+        </PageLayout>
+    );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      posts: data.data,
-    },
-  };
+    return {
+        props: {
+            posts: data.data,
+        },
+    };
 };
