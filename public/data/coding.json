@@ -1,10 +1,22 @@
 {
     "data": [
         {
+            "image": "/coding/transcepta.png",
+            "company": "Transcepta",
+            "jobTitle": "Sr. Frontend Engineer",
+            "dateRange": ["April 2021", "Current"],
+            "description": [
+                "Reduced bundle size of application by around 70%",
+                "Improved developer startup time by around 90%"
+            ],
+            "website": "https://transcepta.com",
+            "github": ""
+        },
+        {
             "image": "/coding/nulia.png",
             "company": "Nulia",
             "jobTitle": "Frontend Developer",
-            "dateRange": ["March 2020", "Current"],
+            "dateRange": ["March 2020", "April 2021"],
             "description": [
                 "Implemented a React based Microsoft Teams application",
                 "Updated and created new components while maintaining WCAG 2 AA compliance",
