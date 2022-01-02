@@ -15,6 +15,8 @@ export default class MyDocument extends Document {
                         as="font"
                         crossOrigin=""
                     />
+                    <meta name="description" content="Sam Svindland's design and developer portfolio" />
+                    <meta name="theme-color" content="#9c27b0" />
                 </Head>
 
                 <body>
