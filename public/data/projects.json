@@ -1,12 +1,30 @@
 {
     "data": [
         {
+            "image": "/projects/period-track.png",
+            "title": "PeriodTrack",
+            "description": "COMING SOON",
+            "github": "",
+            "googlePlay": "",
+            "appleStore": "",
+            "website": ""
+        },
+        {
+            "image": "/projects/body-track.png",
+            "title": "BodyTrack",
+            "description": "An Application for keeping track of body measurements.",
+            "github": "",
+            "googlePlay": "https://play.google.com/store/apps/details?id=com.svindland.bodytrack",
+            "appleStore": "https://apps.apple.com/us/app/bodytrack-fitness-log/id1613621605",
+            "website": ""
+        },
+        {
             "image": "/projects/water-track.png",
             "title": "WaterTrack",
             "description": "An Application for tracking daily water intake build with flutter",
             "github": "",
             "googlePlay": "https://play.google.com/store/apps/details?id=com.svindland.watertrack",
-            "appleStore": "https://apps.apple.com/us/app/id1531629757",
+            "appleStore": "https://apps.apple.com/us/app/watertrack-daily-drinking-log/id1531629757",
             "website": ""
         },
         {

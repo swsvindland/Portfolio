@@ -8,6 +8,15 @@
             "googlePlay": "",
             "appleStore": "",
             "website": ""
+        },
+        {
+            "image": "/games/fluffy-sheep.png",
+            "title": "FluffySheep",
+            "description": "A simple infinite running built in Unity that I built in high school, and finished post grad.",
+            "github": "",
+            "googlePlay": "https://play.google.com/store/apps/details?id=com.svindland.FluffySheep",
+            "appleStore": "https://apps.apple.com/us/app/fluffy-sheeps/id1621957352",
+            "website": ""
         }
     ]
 }
