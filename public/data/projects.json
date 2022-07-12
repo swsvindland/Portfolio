@@ -3,10 +3,10 @@
         {
             "image": "/projects/period-track.png",
             "title": "PeriodTrack",
-            "description": "COMING SOON",
+            "description": "An Application for keeping track of a persons menstrual cycles.",
             "github": "",
-            "googlePlay": "",
-            "appleStore": "",
+            "googlePlay": "https://play.google.com/store/apps/details?id=com.svindland.periodtrack",
+            "appleStore": "https://apps.apple.com/us/app/periodtrack/id1630976601",
             "website": ""
         },
         {

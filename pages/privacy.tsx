@@ -6,7 +6,7 @@ export default function Privacy() {
             <div style={{ padding: 24 }}>
                 <h2>Privacy Policy</h2>
                 <p>
-                    Samuel Svindland built the WaterTrack app as an Ad Supported
+                    Samuel Svindland built his apps, WaterTrack; BodyTrack; PeriodTrack; etc, as an Ad Supported
                     app. This SERVICE is provided by Samuel Svindland at no cost
                     and is intended for use as is.
                 </p>
@@ -32,16 +32,27 @@ export default function Privacy() {
                     <strong>Information Collection and Use</strong>
                 </p>
                 <p>
-                    For a better experience, while using our Service, I may
-                    require you to provide us with certain personally
-                    identifiable information, including but not limited to name,
-                    email. The information that I request will be retained on
-                    your device and is not collected by me in any way.
+                    For a better experience, while using our Service, I may require you to provide us with certain personally
+                    identifiable information, including but not limited to name, email. Any calculations regarding your
+                    period cycle, fertility, and ovulation are performed on your device to maintain privacy and is not
+                    collected by Samuel Svindland or by any third party service providers.
+                </p>
+                <p>
+                    In order to enable cloud sync, default cycle, time zone, flow rate, intimacy, and notes are uploaded to
+                    the cloud. This data is not sold or used to track individual users.
+                </p>
+                <p>
+                    No information entered into PeriodTrack is ever sold to third parties or used to track individual users. All
+                    information that is stored on the cloud is used to create the best user experience and ensure app
+                    efficiency, convenience, and accuracy.
+                </p>
+                <p>
+                    Upon using the “Delete Account” feature, all user data is automatically removed from all storage points.
                 </p>
                 <div>
                     <p>
                         The app does use third party services that may collect
-                        information used to identify you.
+                        information used to identify you, but should not.
                     </p>
                     <p>
                         Link to privacy policy of third party service providers
@@ -50,29 +61,11 @@ export default function Privacy() {
                     <ul>
                         <li>
                             <a
-                                href="https://www.google.com/policies/privacy/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Google Play Services
-                            </a>
-                        </li>
-                        <li>
-                            <a
                                 href="https://support.google.com/admob/answer/6128543?hl=en"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                AdMob
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://firebase.google.com/policies/analytics"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Google Analytics for Firebase
+                                Google AdMob
                             </a>
                         </li>
                         <li>
@@ -81,45 +74,11 @@ export default function Privacy() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Firebase Crashlytics
+                                Google Firebase
                             </a>
                         </li>
                     </ul>
                 </div>
-                <p>
-                    <strong>Log Data</strong>
-                </p>
-                <p>
-                    I want to inform you that whenever you use my Service, in a
-                    case of an error in the app I collect data and information
-                    (through third party products) on your phone called Log
-                    Data. This Log Data may include information such as your
-                    device Internet Protocol (“IP”) address, device name,
-                    operating system version, the configuration of the app when
-                    utilizing my Service, the time and date of your use of the
-                    Service, and other statistics.
-                </p>
-                <p>
-                    <strong>Cookies</strong>
-                </p>
-                <p>
-                    Cookies are files with a small amount of data that are
-                    commonly used as anonymous unique identifiers. These are
-                    sent to your browser from the websites that you visit and
-                    are stored on your {"device's"} internal memory.
-                </p>
-                <p>
-                    This Service does not use these “cookies” explicitly.
-                    However, the app may use third party code and libraries that
-                    use “cookies” to collect information and improve their
-                    services. You have the option to either accept or refuse
-                    these cookies and know when a cookie is being sent to your
-                    device. If you choose to refuse our cookies, you may not be
-                    able to use some portions of this Service.
-                </p>
-                <p>
-                    <strong>Service Providers</strong>
-                </p>
                 <p>
                     I may employ third-party companies and individuals due to
                     the following reasons:
@@ -182,7 +141,7 @@ export default function Privacy() {
                     changes. I will notify you of any changes by posting the new
                     Privacy Policy on this page.
                 </p>
-                <p>This policy is effective as of 2020-09-14</p>
+                <p>This policy is effective as of 2022-07-01</p>
                 <p>
                     <strong>Contact Us</strong>
                 </p>
@@ -200,7 +159,7 @@ export default function Privacy() {
                     >
                         privacypolicytemplate.net
                     </a>
-                    and modified/generated by
+                     and modified/generated by
                     <a
                         href="https://app-privacy-policy-generator.firebaseapp.com/"
                         target="_blank"
