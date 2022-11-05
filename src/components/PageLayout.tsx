@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import {FC, ReactNode} from 'react';
 import { makeStyles, Theme } from '@material-ui/core';
 import Head from 'next/head';
 import Header from './Header';
@@ -17,7 +17,11 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
 }));
 
-export const PageLayout: FC = ({ children }) => {
+interface IProps {
+    children: ReactNode;
+}
+
+export const PageLayout: FC<IProps> = ({ children }) => {
     const classes = useStyles();
 
     return (

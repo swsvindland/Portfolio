@@ -1,5 +1,5 @@
 import { CssBaseline, ThemeProvider, createTheme } from '@material-ui/core';
-import React, { FC } from 'react';
+import React, {FC, ReactNode} from 'react';
 
 const theme = createTheme({
     palette: {
@@ -86,7 +86,11 @@ const theme = createTheme({
     },
 });
 
-const Theme: FC = ({ children }) => {
+interface IProps {
+    children: ReactNode;
+}
+
+const Theme: FC<IProps> = ({ children }) => {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
