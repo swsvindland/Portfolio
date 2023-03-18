@@ -2,11 +2,11 @@ import {
     Button,
     TextField,
     Theme,
-    Typography,
     makeStyles,
-    useTheme,
 } from '@material-ui/core';
-import { FC, MouseEvent } from 'react';
+import {FC, MouseEvent, useState} from 'react';
+import sgMail from '@sendgrid/mail';
+import axios from "axios";
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -25,30 +25,29 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const Contact: FC = () => {
     const classes = useStyles();
-    const theme = useTheme();
+    const [email, setEmail] = useState<string>('');
+    const [body, setBody] = useState<string>('');
+    const [phone, setPhone] = useState<string | undefined>(undefined);
 
-    const handleClick = (event: MouseEvent) => {
+    const handleClick = async (event: MouseEvent) => {
         event.preventDefault();
+        await axios.post('api/sendEmail', {
+            email,
+            body,
+            phone,
+        })
     };
 
     return (
         <form className={classes.root}>
-            <Typography variant="h6" component="h2">
-                Email me at
-            </Typography>
-            <Typography
-                variant="subtitle2"
-                component="h3"
-                style={{ marginBottom: theme.spacing(3) }}
-            >
-                swsvindland@gmail.com
-            </Typography>
             <TextField
                 type="email"
                 label="Email Adress"
                 id="email"
                 variant="outlined"
                 className={classes.input}
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
             />
             <TextField
                 type="phone"
@@ -56,14 +55,18 @@ const Contact: FC = () => {
                 id="phone"
                 variant="outlined"
                 className={classes.input}
+                value={phone}
+                onChange={(event) => setPhone(event.target.value)}
             />
             <TextField
                 multiline
-                rows={4}
+                minRows={4}
                 id="message"
                 placeholder="Hi, I would like to hire you!"
                 variant="outlined"
                 className={classes.input}
+                value={body}
+                onChange={(event) => setBody(event.target.value)}
             />
             <Button
                 type="submit"
@@ -71,9 +74,8 @@ const Contact: FC = () => {
                 color="secondary"
                 className={classes.input}
                 onClick={handleClick}
-                disabled={true}
             >
-                Comming Soon
+                Submit
             </Button>
         </form>
     );
