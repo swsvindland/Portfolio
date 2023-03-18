@@ -1,5 +1,5 @@
 import { CssBaseline, ThemeProvider, createTheme } from '@material-ui/core';
-import React, {FC, ReactNode} from 'react';
+import {FC, ReactNode} from 'react';
 
 const theme = createTheme({
     palette: {

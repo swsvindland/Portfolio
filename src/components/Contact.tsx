@@ -6,7 +6,7 @@ import {
     makeStyles,
     useTheme,
 } from '@material-ui/core';
-import React, { FC, MouseEvent } from 'react';
+import { FC, MouseEvent } from 'react';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {

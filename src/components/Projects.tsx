@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 import { Grid } from '@material-ui/core';
 import Project from './Project';

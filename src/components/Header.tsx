@@ -1,5 +1,5 @@
 import { Button, Link, Theme, Typography, makeStyles } from '@material-ui/core';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { coding, contact, design, games, home, work } from '../routes';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

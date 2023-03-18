@@ -13,6 +13,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from "next/image";
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -59,10 +60,12 @@ const Project: FC<IProps> = ({
 
     return (
         <Paper elevation={1} component="article" className={classes.root}>
-            <img
+            <Image
                 className={classes.image}
                 src={`/images${image}`}
                 alt={`${title}`}
+                width={150}
+                height={150}
             />
             <Typography variant="h6" component="h2">
                 {title}
