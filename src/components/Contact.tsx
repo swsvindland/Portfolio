@@ -5,7 +5,6 @@ import {
     makeStyles,
 } from '@material-ui/core';
 import {FC, MouseEvent, useState} from 'react';
-import sgMail from '@sendgrid/mail';
 import axios from "axios";
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -28,15 +27,24 @@ const Contact: FC = () => {
     const [email, setEmail] = useState<string>('');
     const [body, setBody] = useState<string>('');
     const [phone, setPhone] = useState<string | undefined>(undefined);
+    const [sent, setSent] = useState<boolean>(false);
 
     const handleClick = async (event: MouseEvent) => {
         event.preventDefault();
+        setSent(true);
         await axios.post('api/sendEmail', {
             email,
             body,
             phone,
         })
     };
+
+    if (sent) {
+        return <div className={classes.root}>
+            <h1>Thank you for your message!</h1>
+            <p>I will get back to you shortly</p>
+        </div>;
+    }
 
     return (
         <form className={classes.root}>
