@@ -59,9 +59,13 @@ const Hero: FC = () => {
                         component="p"
                         className={classes.typo}
                     >
-                        I am a software developer with eight plus years of
-                        experience. I specialize in frontend developement with
-                        frameworks such as React, Vue and Flutter.
+                        I am a seasoned software developer with experience in
+                        Quality Assurance, Backend, and Frontend environments. I
+                        have a proven track record of meeting strict and
+                        often-changing deadlines, managing workloads, and
+                        mentoring junior developers. I am passionate about
+                        writing clean, efficient, and scalable code that solves
+                        real-world problems.
                     </Typography>
                     <Typography
                         variant="body1"

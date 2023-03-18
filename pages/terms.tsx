@@ -1,28 +1,29 @@
-import {PageLayout} from '../src/components/PageLayout';
+import { PageLayout } from '../src/components/PageLayout';
 
 export default function Terms() {
     return (
         <PageLayout>
-            <div style={{padding: 24}}>
+            <div style={{ padding: 24 }}>
                 <h2>Terms &amp; Conditions</h2>
                 <p>
-                    By downloading or using any of my apps, BodyTrack; WaterTrack; PeriodTrack; etc. these terms will
-                    automatically apply to you – you should make sure therefore
-                    that you read them carefully before using the app. You’re
-                    not allowed to copy, or modify the app, any part of the app,
-                    or our trademarks in any way. You’re not allowed to attempt
-                    to extract the source code of the app, and you also
-                    shouldn’t try to translate the app into other languages, or
-                    make derivative versions. The app itself, and all the trade
+                    By downloading or using any of my apps, BodyTrack;
+                    WaterTrack; PeriodTrack; etc. these terms will automatically
+                    apply to you – you should make sure therefore that you read
+                    them carefully before using the app. You’re not allowed to
+                    copy, or modify the app, any part of the app, or our
+                    trademarks in any way. You’re not allowed to attempt to
+                    extract the source code of the app, and you also shouldn’t
+                    try to translate the app into other languages, or make
+                    derivative versions. The app itself, and all the trade
                     marks, copyright, database rights and other intellectual
                     property rights related to it, still belong to Samuel
                     Svindland.
                 </p>
-                    Except as expressly provided, Samuel Svindland makes no warranty of any kind, whether express,
-                    implied, statutory or otherwise. Specifically, Samuel Svindland hereby disclaims all implied warranties,
-                    to the maximum extent permitted by applicable law.
-                <p>
-                </p>
+                Except as expressly provided, Samuel Svindland makes no warranty
+                of any kind, whether express, implied, statutory or otherwise.
+                Specifically, Samuel Svindland hereby disclaims all implied
+                warranties, to the maximum extent permitted by applicable law.
+                <p></p>
                 <p>
                     Samuel Svindland is committed to ensuring that the app is as
                     useful and efficient as possible. For that reason, we
@@ -135,23 +136,32 @@ export default function Terms() {
                     (if needed) delete it from your device.
                 </p>
                 <p>
-                    If any provision of this Agreement is found by a proper authority to be unenforceable or invalid, such
-                    unenforceability or invalidity will not render this Agreement unenforceable or invalid as a whole; rather,
-                    this Agreement will be construed as if not containing the particular invalid or unenforceable provision or
-                    portion thereof, and the rights and obligations of the Parties hereto will be construed and enforced
-                    accordingly. In such event, the Parties will negotiate, in good faith, a replacement provision that would
-                    best accomplish the objectives of such unenforceable or invalid provision within the limits of applicable
-                    law or applicable court decisions
+                    If any provision of this Agreement is found by a proper
+                    authority to be unenforceable or invalid, such
+                    unenforceability or invalidity will not render this
+                    Agreement unenforceable or invalid as a whole; rather, this
+                    Agreement will be construed as if not containing the
+                    particular invalid or unenforceable provision or portion
+                    thereof, and the rights and obligations of the Parties
+                    hereto will be construed and enforced accordingly. In such
+                    event, the Parties will negotiate, in good faith, a
+                    replacement provision that would best accomplish the
+                    objectives of such unenforceable or invalid provision within
+                    the limits of applicable law or applicable court decisions
                 </p>
                 <p>
                     <strong>Good to know</strong>
                 </p>
                 <p>
-                    PeriodTrack utilizes a proprietary formula for predicting period cycles, ovulation and fertility. However,
-                    this formula is not 100% accurate and may deviate from your actual period cycles, ovulation and fertility.
-                    These deviations can happen because of multiple reasons, but not limited to, stress, diet, physical
-                    activity, intimacy, birth control changes, or simply because your body feels like it. If you have any doubts
-                    about your physical health because of these deviations, please consult your doctor first.
+                    PeriodTrack utilizes a proprietary formula for predicting
+                    period cycles, ovulation and fertility. However, this
+                    formula is not 100% accurate and may deviate from your
+                    actual period cycles, ovulation and fertility. These
+                    deviations can happen because of multiple reasons, but not
+                    limited to, stress, diet, physical activity, intimacy, birth
+                    control changes, or simply because your body feels like it.
+                    If you have any doubts about your physical health because of
+                    these deviations, please consult your doctor first.
                 </p>
                 <p>
                     <strong>Changes to This Terms and Conditions</strong>

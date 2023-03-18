@@ -1,4 +1,4 @@
-import {FC, ReactNode} from 'react';
+import { FC, ReactNode } from 'react';
 import { makeStyles, Theme } from '@material-ui/core';
 import Head from 'next/head';
 import Header from './Header';
@@ -24,12 +24,12 @@ const useStyles = makeStyles((theme: Theme) => ({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: 16
+        padding: 16,
     },
 }));
 
 interface IProps {
-    home?: boolean
+    home?: boolean;
     children: ReactNode;
 }
 
@@ -51,7 +51,9 @@ export const PageLayout: FC<IProps> = ({ home, children }) => {
 
             <Header />
 
-            <main className={home ? classes.heroRoot : classes.root}>{children}</main>
+            <main className={home ? classes.heroRoot : classes.root}>
+                {children}
+            </main>
 
             <Footer />
         </>
