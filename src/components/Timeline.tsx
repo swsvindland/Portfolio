@@ -3,7 +3,7 @@ import {
     Paper,
     Theme,
     Typography,
-    makeStyles,
+    makeStyles, useTheme, useMediaQuery,
 } from '@material-ui/core';
 import {
     Timeline as MuiTimeline,
@@ -41,11 +41,13 @@ interface IProps {
 
 const Timeline: FC<IProps> = ({ posts }) => {
     const classes = useStyles();
+    const theme = useTheme();
+    const isSmDown = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
-        <MuiTimeline align="alternate">
+        <MuiTimeline align={isSmDown ? "left" : "alternate"} >
             {posts.map((value, index) => (
-                <TimelineItem key={`TimelineItem-${index}`}>
+                <TimelineItem key={`TimelineItem-${index}`} style={isSmDown ? {display: 'block'} : undefined}>
                     <TimelineSeparator>
                         <TimelineDot color="secondary" />
                         <TimelineConnector />

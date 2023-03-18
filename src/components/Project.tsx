@@ -14,6 +14,7 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
+import {faCode} from "@fortawesome/free-solid-svg-icons";
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -37,6 +38,10 @@ const useStyles = makeStyles((theme: Theme) => ({
         alignItems: 'center',
         color: 'white',
     },
+    icon: {
+        width: '0.75em',
+        height: '0.75em',
+    },
 }));
 
 interface IProps {
@@ -46,6 +51,7 @@ interface IProps {
     github?: string;
     googlePlay?: string;
     appleStore?: string;
+    website?: string;
 }
 
 const Project: FC<IProps> = ({
@@ -55,6 +61,7 @@ const Project: FC<IProps> = ({
     github,
     googlePlay,
     appleStore,
+    website
 }) => {
     const classes = useStyles();
 
@@ -80,11 +87,23 @@ const Project: FC<IProps> = ({
                         aria-label="Github"
                         rel="noopener"
                         target="_blank"
-                        style={{ color: 'white' }}
                     >
                         <FontAwesomeIcon
                             icon={faGithub}
-                            style={{ fill: 'white' }}
+                            className={classes.icon}
+                        />
+                    </IconButton>
+                )}
+                {website && (
+                    <IconButton
+                        href={website}
+                        aria-label="Website"
+                        rel="noopener"
+                        target="_blank"
+                    >
+                        <FontAwesomeIcon
+                            icon={faCode}
+                            className={classes.icon}
                         />
                     </IconButton>
                 )}
@@ -94,11 +113,10 @@ const Project: FC<IProps> = ({
                         aria-label="Google Play Store"
                         rel="noopener"
                         target="_blank"
-                        style={{ color: 'white' }}
                     >
                         <FontAwesomeIcon
                             icon={faGooglePlay}
-                            style={{ fill: 'white' }}
+                            className={classes.icon}
                         />
                     </IconButton>
                 )}
@@ -108,11 +126,10 @@ const Project: FC<IProps> = ({
                         aria-label="Apple App Store"
                         rel="noopener"
                         target="_blank"
-                        style={{ color: 'white' }}
                     >
                         <FontAwesomeIcon
                             icon={faAppStore}
-                            style={{ color: 'white' }}
+                            className={classes.icon}
                         />
                     </IconButton>
                 )}

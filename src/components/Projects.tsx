@@ -3,8 +3,21 @@ import { FC } from 'react';
 import { Grid } from '@material-ui/core';
 import Project from './Project';
 
+interface Post {
+    image: string;
+    company: string;
+    jobTitle?: string;
+    title?: string;
+    dateRange: [string, string];
+    description: string;
+    github?: string;
+    googlePlay?: string;
+    appleStore?: string;
+    website?: string;
+}
+
 interface IProps {
-    posts: any[];
+    posts: Post[];
 }
 const Projects: FC<IProps> = ({ posts }) => {
     return (
@@ -19,6 +32,7 @@ const Projects: FC<IProps> = ({ posts }) => {
                         github={value.github}
                         googlePlay={value.googlePlay}
                         appleStore={value.appleStore}
+                        website={value.website}
                     />
                 </Grid>
             ))}

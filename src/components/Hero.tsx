@@ -37,6 +37,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     typo: {
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(1),
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1rem',
+        },
     },
 }));
 
