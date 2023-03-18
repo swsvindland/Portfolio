@@ -1,11 +1,6 @@
-import {
-    Button,
-    TextField,
-    Theme,
-    makeStyles,
-} from '@material-ui/core';
-import {FC, MouseEvent, useState} from 'react';
-import axios from "axios";
+import { Button, TextField, Theme, makeStyles } from '@material-ui/core';
+import { FC, MouseEvent, useState } from 'react';
+import axios from 'axios';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -36,14 +31,16 @@ const Contact: FC = () => {
             email,
             body,
             phone,
-        })
+        });
     };
 
     if (sent) {
-        return <div className={classes.root}>
-            <h1>Thank you for your message!</h1>
-            <p>I will get back to you shortly</p>
-        </div>;
+        return (
+            <div className={classes.root}>
+                <h1>Thank you for your message!</h1>
+                <p>I will get back to you shortly</p>
+            </div>
+        );
     }
 
     return (
