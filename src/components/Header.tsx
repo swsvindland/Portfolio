@@ -59,9 +59,6 @@ const Header: FC = () => {
                     </Typography>
                 </Link>
                 <div className={classes.item}>
-                    <Link className={classes.link} href={design}>
-                        Design
-                    </Link>
                     <Link className={classes.link} href={coding}>
                         Coding
                     </Link>

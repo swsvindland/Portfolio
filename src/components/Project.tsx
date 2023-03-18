@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        color: 'white'
     },
 }));
 
@@ -76,8 +77,9 @@ const Project: FC<IProps> = ({
                         aria-label="Github"
                         rel="noopener"
                         target="_blank"
+                        style={{ color: 'white'}}
                     >
-                        <FontAwesomeIcon icon={faGithub} />
+                        <FontAwesomeIcon icon={faGithub} style={{ fill: 'white'}} />
                     </IconButton>
                 )}
                 {googlePlay && (
@@ -86,8 +88,9 @@ const Project: FC<IProps> = ({
                         aria-label="Google Play Store"
                         rel="noopener"
                         target="_blank"
+                        style={{ color: 'white'}}
                     >
-                        <FontAwesomeIcon icon={faGooglePlay} />
+                        <FontAwesomeIcon icon={faGooglePlay} style={{ fill: 'white'}} />
                     </IconButton>
                 )}
                 {appleStore && (
@@ -96,8 +99,9 @@ const Project: FC<IProps> = ({
                         aria-label="Apple App Store"
                         rel="noopener"
                         target="_blank"
+                        style={{ color: 'white'}}
                     >
-                        <FontAwesomeIcon icon={faAppStore} />
+                        <FontAwesomeIcon icon={faAppStore} style={{ color: 'white'}} />
                     </IconButton>
                 )}
             </div>

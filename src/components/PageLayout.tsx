@@ -5,7 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 const useStyles = makeStyles((theme: Theme) => ({
-    root: {
+    heroRoot: {
         minHeight: '70vh',
         height: '100%',
         width: '100%',
@@ -15,13 +15,25 @@ const useStyles = makeStyles((theme: Theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    root: {
+        minHeight: '70vh',
+        height: '100%',
+        width: '100%',
+        backgroundColor: '#666666',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 16
+    },
 }));
 
 interface IProps {
+    home?: boolean
     children: ReactNode;
 }
 
-export const PageLayout: FC<IProps> = ({ children }) => {
+export const PageLayout: FC<IProps> = ({ home, children }) => {
     const classes = useStyles();
 
     return (
@@ -39,7 +51,7 @@ export const PageLayout: FC<IProps> = ({ children }) => {
 
             <Header />
 
-            <main className={classes.root}>{children}</main>
+            <main className={home ? classes.heroRoot : classes.root}>{children}</main>
 
             <Footer />
         </>
