@@ -98,7 +98,7 @@ const Footer: FC = () => {
                             <Link href={home}>Home</Link>
                         </li>
                         <li>
-                            <Link href={coding}>Coding</Link>
+                            <Link href={coding}>Projects</Link>
                         </li>
                         <li>
                             <Link href={games}>Games</Link>

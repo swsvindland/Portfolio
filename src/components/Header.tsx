@@ -60,7 +60,7 @@ const Header: FC = () => {
                 </Link>
                 <div className={classes.item}>
                     <Link className={classes.link} href={coding}>
-                        Coding
+                        Projects
                     </Link>
                     <Link className={classes.link} href={games}>
                         Games

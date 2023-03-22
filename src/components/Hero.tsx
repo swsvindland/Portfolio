@@ -55,39 +55,47 @@ const Hero: FC = () => {
                         component="h2"
                         className={classes.typo}
                     >
-                        Frontend Software Developer
+                        Software Engineer
                     </Typography>
                     <Typography
                         variant="body1"
                         component="p"
                         className={classes.typo}
                     >
-                        I am a seasoned software developer with experience in
-                        Quality Assurance, Backend, and Frontend environments. I
-                        have a proven track record of meeting strict and
-                        often-changing deadlines, managing workloads, and
-                        mentoring junior developers. I am passionate about
-                        writing clean, efficient, and scalable code that solves
-                        real-world problems.
+                        Welcome to my portfolio! I am an experienced software
+                        developer with expertise in Frontend, Backend, and
+                        Quality Assurance.
                     </Typography>
                     <Typography
                         variant="body1"
                         component="p"
                         className={classes.typo}
                     >
-                        I have developed many professional level applications,
-                        check out my work experience page. Also I have created
-                        many personal projects as a showcase of my skills and
-                        passion for developing fast, reliable, and beautiful
-                        applications, check out my projects page.
+                        Throughout my career, I have consistently met deadlines
+                        and managed heavy workloads and mentored junior
+                        developers. I focus on writing clean, efficient, and
+                        scalable code has helped me develop professional-level
+                        applications that solve real-world problems.
                     </Typography>
                     <Typography
                         variant="body1"
                         component="p"
                         className={classes.typo}
                     >
-                        If you would like to work with me, or hire me for a
-                        project, reach out using the link below.
+                        I invite you to check out my work experience page to see
+                        my history in the field. Additionally, I have many
+                        personal projects to showcase my skills and passion for
+                        developing fast, reliable, and beautiful applications.
+                    </Typography>
+                    <Typography
+                        variant="body1"
+                        component="p"
+                        className={classes.typo}
+                    >
+                        If you are looking for a talented and dedicated software
+                        developer, I am eager to speak with you. Please use the
+                        link below to get in touch, and I look forward to the
+                        opportunity to contribute to your team.
                     </Typography>
                     <Button
                         variant="contained"
