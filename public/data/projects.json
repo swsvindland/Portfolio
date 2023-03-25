@@ -22,7 +22,7 @@
             "image": "/projects/bp-track.png",
             "title": "BloodPressureTrack",
             "description": "An Application for keeping track of a users blood pressure.",
-            "github": "",
+            "github": "https://github.com/swsvindland/bp_track",
             "googlePlay": "https://play.google.com/store/apps/details?id=com.svindland.bodytrack",
             "appleStore": "https://apps.apple.com/us/app/bodytrack-fitness-log/id1613621605",
             "website": ""
