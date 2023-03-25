@@ -31,7 +31,7 @@
             "image": "/projects/body-track.png",
             "title": "BodyTrack",
             "description": "An Application for keeping track of body measurements.",
-            "github": "",
+            "github": "https://github.com/swsvindland/body_track",
             "googlePlay": "https://play.google.com/store/apps/details?id=com.svindland.bodytrack",
             "appleStore": "https://apps.apple.com/us/app/bodytrack-fitness-log/id1613621605",
             "website": ""
