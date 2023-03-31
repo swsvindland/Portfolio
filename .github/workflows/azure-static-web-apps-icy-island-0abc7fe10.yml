@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: true
       - name: 'Install Pnpm'
-        uses: npm install -g pnpm
+        run: npm install -g pnpm
       - name: 'Setup: Install Dependencies'
         run: pnpm install
       - name: 'Run Build'
